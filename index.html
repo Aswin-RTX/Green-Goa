@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenGoa  - Smart Waste Management</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>🌱 GreenGoa</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#waste-types" class="nav-link">Waste Types</a></li>
+                <li><a href="#take-action" class="nav-link">Take Action</a></li>
+                <li><a href="case-studies.html" class="nav-link">Case Studies</a></li>
+                <li><a href="report.html" class="nav-link">Report Waste</a></li>
+                <li><a href="about-us.html" class="nav-link">About Us</a></li>
+                <li><a href="contact-us.html" class="nav-link">Contact Us</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Smart Waste Management for a Cleaner Future</h1>
+            <p>Join us in revolutionizing waste management through technology and community action</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="scrollToSection('waste-types')">Get Started</button>
+                <button class="btn btn-secondary" onclick="scrollToSection('about-us.html')">Learn More</button>
+            </div>
+        </div>
+       
+    </section>
+
+    <!-- Waste Types Section -->
+    <section id="waste-types" class="section">
+        <div class="container">
+            <h2 class="section-title">Waste Categories</h2>
+            <div class="waste-grid">
+                <div class="waste-card" data-type="organic">
+                    <div class="waste-icon">🥬</div>
+                    <h3>Organic Waste</h3>
+                    <p>Food scraps, yard trimmings, and biodegradable materials</p>
+                    <div class="waste-tips">
+                        <h4>Tips:</h4>
+                        <ul>
+                            <li>Compost at home</li>
+                            <li>Separate from other waste</li>
+                            <li>Use biodegradable bags</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="waste-card" data-type="recyclable">
+                    <div class="waste-icon">♻️</div>
+                    <h3>Recyclable</h3>
+                    <p>Paper, plastic, glass, and metal items</p>
+                    <div class="waste-tips">
+                        <h4>Tips:</h4>
+                        <ul>
+                            <li>Clean containers before recycling</li>
+                            <li>Remove caps and lids</li>
+                            <li>Sort by material type</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="waste-card" data-type="hazardous">
+                    <div class="waste-icon">⚠️</div>
+                    <h3>Hazardous</h3>
+                    <p>Chemicals, batteries, electronics, and toxic materials</p>
+                    <div class="waste-tips">
+                        <h4>Tips:</h4>
+                        <ul>
+                            <li>Never mix with regular waste</li>
+                            <li>Use designated drop-off points</li>
+                            <li>Check local guidelines</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="waste-card" data-type="general">
+                    <div class="waste-icon">🗑️</div>
+                    <h3>General Waste</h3>
+                    <p>Non-recyclable items that go to landfill</p>
+                    <div class="waste-tips">
+                        <h4>Tips:</h4>
+                        <ul>
+                            <li>Minimize where possible</li>
+                            <li>Reuse items when feasible</li>
+                            <li>Proper bag disposal</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Take Action Section -->
+    <section id="take-action" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Take Action</h2>
+            <div class="action-grid">
+                <div class="action-card">
+                    <h3>📅 Schedule Pickup</h3>
+                    <p>Book a waste collection service for your area</p>
+                    <button class="btn btn-primary" onclick="openModal('schedule-modal')">Schedule Now</button>
+                </div>
+                <div class="action-card">
+                    <h3>🌍 Find Recycling Centers</h3>
+                    <p>Locate the nearest recycling facilities</p>
+                    <button class="btn btn-primary" onclick="findRecyclingCenters()">Find Centers</button>
+                </div>
+                <div class="action-card">
+                    <h3>📚 Learn Best Practices</h3>
+                    <p>Discover effective waste reduction strategies</p>
+                    <button class="btn btn-primary" onclick="openModal('tips-modal')">View Tips</button>
+                </div>
+                <div class="action-card">
+                    <h3>🤝 Join Community</h3>
+                    <p>Connect with local environmental groups</p>
+                    <button class="btn btn-primary" onclick="openModal('community-modal')">Join Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+   
+   
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🌱 GreenGoa</h3>
+                    <p>Smart waste management for a sustainable future</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#waste-types">Waste Types</a></li>
+                        <li><a href="#take-action">Take Action</a></li>
+                        <li><a href="report.html">Report Waste</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="contact-us.html">Contact</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Help Center</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 GreenGoa. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

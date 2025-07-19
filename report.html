@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenGoa - Smart Waste Management</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>🌱 GreenGoa</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="index.html#waste-types" class="nav-link">Waste Types</a></li>
+                <li><a href="index.html#take-action" class="nav-link">Take Action</a></li>
+                <li><a href="case-studies.html" class="nav-link">Case Studies</a></li>
+                <li><a href="report.html" class="nav-link">Report Waste</a></li>
+                <li><a href="about-us.html" class="nav-link">About Us</a></li>
+                <li><a href="contact-us.html" class="nav-link">Contact Us</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+ <!-- Report Waste Section -->
+ <section id="report-waste" class="section">
+    <div class="container">
+        <h2 class="section-title">Report Waste Issues</h2>
+        <div class="report-container">
+            <div class="report-form">
+                <h3>Submit a Report</h3>
+                <form id="waste-report-form">
+                    <div class="form-group">
+                        <label for="issue-type">Issue Type</label>
+                        <select id="issue-type" required>
+                            <option value="">Select an issue</option>
+                            <option value="illegal-dumping">Illegal Dumping</option>
+                            <option value="overflowing-bins">Overflowing Bins</option>
+                            <option value="missed-collection">Missed Collection</option>
+                            <option value="damaged-bins">Damaged Bins</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="location">Location</label>
+                        <input type="text" id="location" placeholder="Enter address or landmark" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <textarea id="description" rows="4" placeholder="Describe the issue in detail" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="priority">Priority Level</label>
+                        <select id="priority" required>
+                            <option value="">Select priority</option>
+                            <option value="low">Low</option>
+                            <option value="medium">Medium</option>
+                            <option value="high">High</option>
+                            <option value="urgent">Urgent</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-info">Contact Information</label>
+                        <input type="email" id="contact-info" placeholder="Your email address" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit Report</button>
+                </form>
+            </div>
+            <div class="report-status">
+                <h3>Report Status</h3>
+                <div class="status-tracker">
+                    <div class="status-item">
+                        <div class="status-number">1</div>
+                        <div class="status-text">Report Submitted</div>
+                    </div>
+                    <div class="status-item">
+                        <div class="status-number">2</div>
+                        <div class="status-text">Under Review</div>
+                    </div>
+                    <div class="status-item">
+                        <div class="status-number">3</div>
+                        <div class="status-text">Action Taken</div>
+                    </div>
+                    <div class="status-item">
+                        <div class="status-number">4</div>
+                        <div class="status-text">Resolved</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>🌱 GreenGoa</h3>
+                <p>Smart waste management for a sustainable future</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#waste-types">Waste Types</a></li>
+                    <li><a href="index.html#take-action">Take Action</a></li>
+                    <li><a href="report.html">Report Waste</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="contact-us.html">Contact</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Help Center</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 GreenGoa. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>
