@@ -1,1 +1,1 @@
-[Open Website!](https://github.com/Aswin-RTX/Green-Goa.git)
+[Open Website!](https://aswin-rtx.github.io/Green-Goa/)
